@@ -1,0 +1,14 @@
+ tempo de importação
+
+ contagem def ( quant_tempo ):
+        while  quant_tempo :
+            m , s  =  divmod ( quant_tempo , 60 )
+            min_tempo  = '{:02d}:{:02d}' . formato ( m , s )
+            print ( min_tempo , end  =  ' \r ' )
+            tempo . dormir ( 1 )
+            quant_tempo  -=  1    
+        print ( "BUMM!!!" )
+        
+inp  =  int ( input ( "Iniciando contagem regressiva: " ))
+
+contagem ( inp )
